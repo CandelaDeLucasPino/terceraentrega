@@ -1,0 +1,486 @@
+$color-ppal:white;
+$color-sec:#0d6efd;
+$color-ter: black;
+body{
+    background-color: $color-ppal;
+    }
+    .foto{
+        background-image: url(../img/fondobody.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .bg-logo{
+        background-color: $color-ppal;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: $color-sec;
+        font-family: 'Changa', sans-serif;
+        font-size: 20px;
+    }
+    .logo{
+        width: 200px;
+    }
+    
+    .navbar-light .navbar-toggler {
+        color: $color-sec;
+        border-color:$color-sec;
+        border-width: 3px;
+    }
+    .dropdown-menu{
+        background-color:  rgba(64,64,64,255);
+        border: none;
+        color: $color-sec;
+    }
+    .dropdown-item{
+        color: $color-sec;
+        font-family: 'Changa', sans-serif;
+    }
+    .dropdown-menu{
+        background-color: $color-ppal;
+        outline: none;
+    }
+    
+    /*index*/
+   
+    
+    .btn-secondary{
+        color:$color-sec;
+        font-family: 'Changa', sans-serif;
+        font-size: 20px;
+        background-color: transparent;
+        border:none;
+        outline: none;
+    }
+    .btn-secondary:hover{
+        color: $color-ter;
+        background-color:$color-ppal;
+        border:none;
+        outline: none;
+        text-decoration: none;
+    }
+    .btn-check:focus+.btn-secondary, .btn-secondary:focus{
+        background-color: $color-ppal;
+        color:$color-ter;
+        border-color: $color-ppal;
+        border:none;
+        box-shadow: none;
+        border-width: none;
+        outline: none;
+        text-decoration: none;
+    }
+      
+    /*main*/
+    
+    .img1{
+        grid-area: img1;
+        display: flex;
+        justify-content: center;
+        background-color: #d20962;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .img2{
+        grid-area: img2;
+        display: flex;
+        justify-content: center;
+        background-color: #00a78e;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .img3{
+        grid-area: img3;
+        display: flex;
+        justify-content: center;
+        background-color: #f47721;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .img4{
+        grid-area: img4;
+        display: flex;
+        justify-content: center;
+        background-color: #7ac143;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .img5{
+        grid-area: img5;
+        display: flex;
+        justify-content: center;
+        background-color: #00bce4;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .img6{
+        grid-area: img6;
+        display: flex;
+        justify-content: center;
+        background-color: #7d3f98;
+        border-radius: 10px;
+        text-align: center;
+    
+    
+    }
+    .contenedor {
+        max-width: 1200px;
+        margin: auto;
+        width: 80vw;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        height: 50vh;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:
+        "img1 img1 img2"
+        "img3 img4 img6"
+        "img3 img5 img6";
+        gap: 10px;
+    }
+    .translate:hover{
+        transform: translate(20px, 30px);
+    }
+    .img1 a{
+        text-decoration: none;
+        align-self: center;
+    }
+    .img2 a{
+        text-decoration: none;
+        align-self: center;
+    }
+    .img3 a{
+        text-decoration: none;
+        align-self: center;
+    }
+    .img4 a{
+        text-decoration: none;
+        align-self: center;
+    }
+    .img5 a{
+        text-decoration: none;
+        align-self: center;
+    }
+    .img6 a{
+        text-decoration: none;
+        align-self: center;
+    }
+    h2{
+        font-family: 'Changa', sans-serif;
+        font-size: 40px; 
+        color: $color-ter;
+        margin: auto;
+        text-transform: uppercase;
+        
+    }
+    /*footer*/
+    
+    footer{
+        background-color: $color-sec;
+        text-align: center;
+        height: 25px;
+        position: fixed;
+        width: 100%;
+        height: 40px;
+        bottom: 0;
+    }
+    
+    .redessociales{
+        position: absolute;
+        top:8px;
+        right: 60px;
+    }
+    .instagram{
+        width: 30px;
+        height: 25px;
+        display: inline-block;
+    }
+    .youtube{
+        width: 30px;
+        height: 25px;
+        display: inline-block;
+    }
+    .facebook{
+        width: 30px;
+        height: 25px;
+        display: inline-block;
+    }
+    .whatsapp{
+        width: 30px;
+        height: 25px;
+        display: inline-block;
+    }
+    /*pagina clases*/
+    
+    .titclases{
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-family: 'Changa', sans-serif;
+        font-size: 40px;
+        padding-top: 30px;
+        text-shadow: 2px 4px $color-sec;
+    }
+    .tarjetas{
+        width: 100%;
+        height: auto;
+        display: flex;
+        max-width: 1100px;
+        padding-top: 15px;
+        gap: 4rem;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+    .tarjeta{
+        border: 10px;
+        text-align: center;
+        background-color: $color-ppal;
+        width: 300px;
+        border-radius: 15px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black;
+        color: black;
+        box-shadow: 2px 4px $color-sec;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .tarjeta:hover{
+        transform: translate(20px, 30px);
+    }
+    .imga{
+        width: 100%;
+        height: 250px;
+    }
+    .imgb{
+        width: 100%;
+        height: 250px;
+    }
+    .imgc{
+        width: 100%;
+        height: 250px;
+    }
+    .imgd{
+        width: 100%;
+        height: 250px;
+    }
+    
+    /*contacto*/
+    
+    .bigicon {
+        font-size: 35px;
+        color: black;
+        text-shadow: 2px 4px $color-sec;
+    }
+    .header{
+        font-family:'Changa', sans-serif ;
+        font-size: 35px;
+        color:black;
+        text-shadow: 2px 4px $color-sec;
+    }
+    .btn{
+        margin-bottom: 60px;
+        color: $color-sec;
+    }
+    .btn-primary{
+        background-color: black;
+    }
+    
+    /*Videos*/
+    .video2{
+        text-align: center;
+        width: 100%;
+        font-family:'Changa', sans-serif ;
+        font-size: 40px;
+        color:black;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-shadow: 2px 4px $color-sec;
+    }
+    .videos{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    @media only screen and (max-width:520px){
+        .logo{
+            width: 170px;
+        }
+    
+        .contenedor {
+            width: 80vw;
+            margin-top: 40px;
+            height: 80vh;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,1fr);
+            grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6";
+        }
+        
+        h2{
+            font-size: 30px; 
+            line-height: 40px;    
+        }
+        footer{
+            height: 30px;
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        .redessociales{
+            top: 3px;
+            right: 20px;
+        }
+        .instagram{
+            width: 20px;
+            height: 17px;
+        }
+        .youtube{
+            width: 20px;
+            height: 17px;
+        }
+        .facebook{
+            width: 20px;
+            height: 17px;
+        }
+        .whatsapp{
+            width: 20px;
+            height: 17px;
+        }
+    
+        /*pagina video*/
+    
+        .video2{
+            font-size: 35px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+        .videos{
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            padding-top: 5px;
+            margin-bottom: 20px;
+        }
+        .video{
+            width:100%;
+            padding-top: 5px;
+            padding-left: 7px;
+            padding-right: 7px;
+            position: relative;
+            content: center;
+            margin: 0 auto;
+        }
+        /*pagina clases*/
+    
+        .titclases{
+            font-size: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-top: 0;
+        }
+        .imga{
+            grid-area: imga;
+            display: flex;
+        }
+        .imgb{
+            grid-area: imgb;
+            display: flex;
+        }
+        .imgc{
+            grid-area: imgc;
+            display: flex;
+        }
+        .imgd{
+            grid-area: imgd;
+            display: flex;
+        }
+    
+        .tarjetas{
+            position: relative;
+            bottom: 20px;
+            display: grid;
+            justify-items: center;
+            margin-bottom: 30px;
+            align-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-areas: 
+            "imga"
+            "imgb"
+            "imgc"
+            "imgd";
+        }
+    }
+    @media only screen and (min-width:520px) and (max-width:1025px){
+        .contenedor {
+            margin-top: 40px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,1fr);
+            grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6";
+        }
+        
+        h2{
+            font-size: 30px; 
+            line-height: 40px;
+            
+        }
+    
+        /*pag clases*/
+    
+        .tarjetas{
+            position: relative;
+            bottom: 20px;
+            display: grid;
+            justify-items: center;
+            margin-bottom: 35px;
+            align-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-areas: 
+            "imga"
+            "imgb"
+            "imgc"
+            "imgd";
+        }
+    
+        /*pagina video*/
+        .video2{
+            font-size: 35px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+        .videos{
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            padding-top: 5px;
+            margin-bottom: 45px;
+        }
+        .video{
+            width:100%;
+            padding-top: 5px;
+            padding-left: 7px;
+            padding-right: 7px;
+            position: relative;
+            content: center;
+            margin: 0 auto;
+        }
+    }
